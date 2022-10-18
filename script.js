@@ -1,52 +1,37 @@
-function ShowName(greeting, first, last) {
-alert(greeting + " " + first + " " + last);
-//console.log(greeting + " " + first + " " + last);
-  /*
-Sample code to be commented out
-  */
-}
-
-//ShowName("Hiya! ","Nisha", "Brijesh");
-
-// Function to concatenate 2 values accepted as parameters:
-/*
-function join2Strings(message, value){
-  console.log(message + " " + value );
+//Function declaration
+function ShowName(first, last) {
+//alert("Hello! " + first + " " + last);
+console.log("Hello " + first + " " + last);
   
 }
+//Invoking the function with arguments
+ShowName("Nisha", "Brijesh");
 
-let msg=''
-let val=''
-msg=prompt('Enter your message:');
-val=prompt('Enter your value:');
-
-join2Strings(msg,val);
-*/
-
-// Invoking a function via a variable. using return command in the function.
-
-function getMyNumber(number) {
-return "718" + number;
+//Function declaration using return statement
+function Add2Num(num1, num2) {
+  let sum=num1+num2;
+  return sum;
 }
 
-/*
-let myNumberWithAreaCode = getMyNumber("567-9000");
-console.log(myNumberWithAreaCode);
-*/
+//Invoking the function with arguments
+let answer=Add2Num(1,2);
+console.log("The sum is:",answer)
 
-//console.log(typeof(getMyNumber)); // function
+console.log(typeof(Add2Num)); // function
 
-/*
-// Arrow functions:
-// setInterval and clearInterval commands :
-let counter = 5
-let countDown = setInterval(() => {
-console.log(counter)
-counter-- //counter=counter-1
-if (counter === 0) {
-console.log("I have no name!!")
-clearInterval(countDown)
+//Declaring a function with no parameters
+function Hello(){
+  console.log("Hi Class! how are you doing today?")
 }
-}, 1000) // interval is specified in milliseconds
 
-*/
+Hello();
+
+//sending arguments based on user response
+//Function declaration
+function sayHello(firstlastname) {
+alert("Hello " + firstlastname);
+}
+
+let strName=prompt("Enter your name:")
+//Invoking the function with arguments
+sayHello(strName);
